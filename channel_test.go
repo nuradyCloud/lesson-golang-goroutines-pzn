@@ -157,10 +157,10 @@ func TestRaceCondition(t *testing.T) {
 		go func() {
 			for j := 1; j <= 100; j++ {
 				x = x + 1
-				x = 1000 + 1
-				x = 1000 + 1
-				x = 1000 + 1
-				x = 1000 + 1
+				//x = 1000 + 1
+				//x = 1000 + 1
+				//x = 1000 + 1
+				//x = 1000 + 1
 			}
 		}()
 	}
